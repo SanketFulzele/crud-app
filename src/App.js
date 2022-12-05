@@ -21,6 +21,16 @@ import SelfAuth from './SelfApi/SelfAuth';
 import ClinicAuth from './SelfApi/ClinicAuth';
 import Storages from './Storages/Storages';
 import AlertToast from './AlertToast/AlertToast';
+import UpLift from './UpLift/UpLift';
+import AuthAccessToken from './AuthAccessToken/AuthAccessToken';
+import Material from './Material/Material';
+import MyResort from './MyResort/MyResort';
+import MediaQuery from './MediaQuery/MediaQuery';
+import DateRange from './DateRange/DateRange';
+import RangePicker from './DateRange/RangePicker';
+import DatePicker from './DateRange/DatePicker';
+import MatRange from './MatRange/MatRange';
+
 
 function App() {
   return (
@@ -48,7 +58,15 @@ function App() {
             <Route path="/clinic-auth" element={<ClinicAuth />} />
             <Route path="/storages" element={<Storages />} />
             <Route path="/toast" element={<AlertToast/>} />
-            
+            <Route path="/uplift" element={<UpLift/>} />
+            <Route path='tokens' element={<AuthAccessToken/>} />
+            <Route path='material/:id' element={<Material/>} />
+            <Route path='resort' element={<MyResort/>} />
+            <Route path='media' element={<MediaQuery/>} />
+            <Route path='date-range' element={<DateRange/>} />
+            <Route path='range-picker' element={<RangePicker/>} />
+            <Route path='date-picker' element={<DatePicker/>} />
+            <Route path='matrange' element={<MatRange/>} />
       </Routes>
 </BrowserRouter>
     </>

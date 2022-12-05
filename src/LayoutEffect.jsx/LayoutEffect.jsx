@@ -10,17 +10,17 @@ const LayoutEffect = () => {
 
     useEffect(() => {
         console.log("The First UseEffect Hook");
-    },[])
+    }, [])
     useEffect(() => {
         console.log("The Second UseEffect Hook");
-    },[])
+    }, [])
     useEffect(() => {
         console.log("The Third UseEffect Hook");
-    },[])
+    }, [])
 
     useLayoutEffect(() => {
         console.log("The Last Layout Effect Hook")
-    },[])
+    }, [])
 
 
     // useEffect(() => {
@@ -32,20 +32,21 @@ const LayoutEffect = () => {
 
     useLayoutEffect(() => {
         if (num === 0) {
-            setNum( num + Math.floor( Math.random() * 100))
+            setNum(num + Math.floor(Math.random() * 100))
         }
         console.log(num);
-    },[num])
+    }, [num])
 
-  return (
-    <div>
-      <h4>Use Layout Effect Hook</h4>
 
-      <h6>My New Random Number {num} </h6>
+    return (
+        <div>
+            <h4>Use Layout Effect Hook</h4>
 
-      <Button onClick={() => setNum(0)}>New Number</Button>
-    </div>
-  )
+            <h6>My New Random Number {num} </h6>
+
+            <Button onClick={() => setNum(0)}>New Number</Button>
+        </div>
+    )
 }
 
 export default LayoutEffect;

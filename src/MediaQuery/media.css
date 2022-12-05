@@ -1,0 +1,16 @@
+.can {
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(17, 17, 17);
+}
+
+@media (width <= 500px) {
+    .can {
+        background-color: rgb(193, 179, 26);
+    }
+}
+@media (500px <= width <= 800px) {
+    .can {
+        background-color: rgb(26, 195, 195);
+    }
+}
